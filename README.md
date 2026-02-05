@@ -124,7 +124,4 @@ http://localhost:3000
 
 
 ## 📸 Screenshot
-
-![Screenshot](./public/assets/screenshot.png)
-
-(ว���งไฟล์รูปที่ public/assets/screenshot.png ใน repository หรือแก้พาธให้ตรงกับตำแหน่งไฟล์รูปของคุณ)
+<img width="1920" height="877" alt="Screenshot 2026-02-06 014754" src="https://github.com/user-attachments/assets/92c824af-32ba-4ca8-9544-c14258cc5186" />
