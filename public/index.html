@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1> Task Management System</h1>
+    <p>Monolithic Web Application</p>
+  </header>
+
+  <main>
+    <!-- Add Task -->
+    <section class="card">
+      <h2>Add New Task</h2>
+      <form id="task-form">
+        <input id="title" type="text" placeholder="Task title" required />
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <select id="priority">
+          <option value="LOW">LOW</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="HIGH">HIGH</option>
+        </select>
+
+        <button type="submit">➕ Add Task</button>
+      </form>
+    </section>
+
+    <!-- Filter -->
+    <section class="filter">
+      <label>Filter by status:</label>
+      <select id="filter-status">
+        <option value="ALL">All</option>
+        <option value="To Do">To Do</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+    </section>
+
+    <!-- Task List -->
+    <section id="task-list" class="task-grid"></section>
+  </main>
+
+<script src="script.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

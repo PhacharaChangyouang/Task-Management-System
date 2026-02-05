@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --size: 6em;
+  --radius: 1em;
+}
+
+
+body {
+  margin: 0;
+  background: 
+    repeating-conic-gradient(#fff 0% 25%, #000 0 50%), 
+    linear-gradient(45deg, #000 25%, #fff 0 75%, #000 0), 
+    radial-gradient(#000 calc(var(--radius) - 2px), 
+                    #fff var(--radius) calc(var(--radius) * 2 - 2px), 
+                    #000 calc(var(--radius) * 2) calc(var(--radius) * 3 - 0.5px), 
+                    grey calc(var(--radius) * 3 + 0.5px));
+  background-size: calc(var(--size) * 2) calc(var(--size) * 2), var(--size) var(--size), var(--size) var(--size);
+  background-blend-mode: difference, overlay;
+  color: #333;
+}
+
+header {
+  background: #ff59e9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Form */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+/* Filter */
+.filter {
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #FF9D7B;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Task List */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-card h3 {
+  margin-top: 0;
+}
+
+.task-card button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.task-card button:hover {
+  background: #c0392b;
+}
+
+.task-card select {
+  width: 100%;
+  margin: 8px 0;
+}
+/* Status Colors */
+.task-card.todo {
+  border-left: 6px solid #e67e22;
+  background: #fffaf3;
+}
+
+.task-card.in-progress {
+  border-left: 6px solid #3498db;
+  background: #f3f8ff;
+}
+
+.task-card.done {
+  border-left: 6px solid #2ecc71;
+  background: #f3fff8;
+}
+
+.status-label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+}
