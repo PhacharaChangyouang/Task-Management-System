@@ -99,3 +99,6 @@ DELETE	/api/tasks/:id	ลบงาน
 ระบบนี้ใช้ Monolithic Architecture
 โดย Frontend, Backend และ Database ทำงานร่วมกันในแอปพลิเคชันเดียว
 เหมาะสำหรับระบบขนาดเล็กถึงกลาง และง่ายต่อการพัฒนาและดูแลรักษา
+
+<img width="1920" height="877" alt="Screenshot 2026-02-06 014754" src="https://github.com/user-attachments/assets/e1d0af10-9d0f-4dbf-857c-bd25cb65aa17" />
+
