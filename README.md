@@ -43,7 +43,6 @@ week3-starter-code/
 │ └── status-utils.js # Utility for task status styling
 └── README.md
 
-
 ---
 
 ## ▶️ Getting Started
@@ -61,50 +60,71 @@ week3-starter-code/
 ```bash
 git clone <your-repository-url>
 cd week3-starter-code
-Install dependencies
+```
 
+2. Install dependencies
+
+```bash
 npm install
-Setup Database
+```
+
+3. Setup Database
 
 Mac / Linux
 
+```bash
 cd database
 sqlite3 tasks.db < schema.sql
+```
+
 Windows (PowerShell)
 
+```powershell
 cd database
 Get-Content schema.sql | sqlite3 tasks.db
-Start Server
+```
 
+4. Start Server
+
+```bash
 cd ..
 npm run dev
+```
+
 เปิดเว็บเบราว์เซอร์
 
 http://localhost:3000
+
+---
+
 📡 API Documentation
-Method	Endpoint	Description
-GET	/api/tasks	ดึงข้อมูลงานทั้งหมด
-GET	/api/tasks/:id	ดึงข้อมูลงานตาม ID
-POST	/api/tasks	สร้างงานใหม่
-PUT	/api/tasks/:id	แก้ไขข้อมูลงานทั้งหมด
-PATCH	/api/tasks/:id/status	แก้ไขเฉพาะสถานะงาน
-DELETE	/api/tasks/:id	ลบงาน
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/tasks | ดึงข้อมูลงานทั้งหมด |
+| GET | /api/tasks/:id | ดึงข้อมูลงานตาม ID |
+| POST | /api/tasks | สร้างงานใหม่ |
+| PUT | /api/tasks/:id | แก้ไขข้อมูลงานทั้งหมด |
+| PATCH | /api/tasks/:id/status | แก้ไขเฉพาะสถานะงาน |
+| DELETE | /api/tasks/:id | ลบงาน |
+
 🧾 Example JSON Payload (Create Task)
+```json
 {
   "title": "ทำการบ้านวิชา Web",
   "description": "พัฒนา Task Management System",
   "priority": "HIGH"
 }
+```
+
 🧠 Architecture Explanation
 ระบบนี้ใช้ Monolithic Architecture
 โดย Frontend, Backend และ Database ทำงานร่วมกันในแอปพลิเคชันเดียว
 เหมาะสำหรับระบบขนาดเล็กถึงกลาง และง่ายต่อการพัฒนาและดูแลรักษา
 
 
-
 ## 📸 Screenshot
 
-![Screenshot](https://github.com/user-attachments/assets/a0787554-bd0f-48c1-8e3e-245156b11618)
+![Screenshot](./public/assets/screenshot.png)
 
-
-
+(ว���งไฟล์รูปที่ public/assets/screenshot.png ใน repository หรือแก้พาธให้ตรงกับตำแหน่งไฟล์รูปของคุณ)
