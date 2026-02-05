@@ -104,6 +104,7 @@ DELETE	/api/tasks/:id	ลบงาน
 
 ## 📸 Screenshot
 
-![Task Management System](screenshots/Screenshot 2026-02-06 014754.png)
+<img width="1920" height="877" alt="Screenshot 2026-02-06 014754" src="https://github.com/user-attachments/assets/a0787554-bd0f-48c1-8e3e-245156b11618" />
+
 
 
